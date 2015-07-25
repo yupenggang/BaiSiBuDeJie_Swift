@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Kingfisher
+import SDWebImage
 
 class JWSubscribeTagsCell: UITableViewCell {
     
@@ -29,7 +29,7 @@ class JWSubscribeTagsCell: UITableViewCell {
                     subNumLabel.text = "\(subscribeTag.subscribeNumber)人订阅"
                 }
                 
-                picImageView.kf_setImageWithURL(NSURL(string: subscribeTag.imagePath)!, placeholderImage: UIImage(named: "defaultTagIcon"))
+                picImageView.sd_setImageWithURL(NSURL(string: subscribeTag.imagePath)!, placeholderImage: UIImage(named: "defaultTagIcon"))
                 
             }
         }

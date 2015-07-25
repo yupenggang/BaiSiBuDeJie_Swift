@@ -3,4 +3,4 @@ use_frameworks!
 
 pod 'SVProgressHUD'
 pod 'MJRefresh'
-pod 'Kingfisher'
+pod 'SDWebImage'

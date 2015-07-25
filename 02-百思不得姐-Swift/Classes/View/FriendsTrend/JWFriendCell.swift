@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Kingfisher
+import SDWebImage
 
 class JWFriendCell: UITableViewCell {
     
@@ -18,7 +18,7 @@ class JWFriendCell: UITableViewCell {
     var friend: RecommendFriend? {
         didSet {
             if let friend = friend {
-                headImageView.kf_setImageWithURL(NSURL(string: friend.header)!, placeholderImage: UIImage(named: "defaultUserIcon"))
+                headImageView.sd_setImageWithURL(NSURL(string: friend.header)!, placeholderImage: UIImage(named: "defaultUserIcon"))
                 nameLabel.text = friend.name
                 fansCountLabel.text = "\(friend.fansCount)人关注"
             }
